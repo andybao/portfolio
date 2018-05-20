@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 Wenyu Bao [wenyu.bao@gmail.com]
+ * Copyright (c) 2018 Andy Bao [me@andybao.net]
  * Licensed under the MIT license.
  *
  */
@@ -320,6 +320,7 @@ function start() {
 
       if (millenniumFalcon.collisionCheck(enemies[y])) {
         millenniumFalcon.changeToCrashImage();
+        enemies[y].changeToCrashImage();
         maindiv.removeEventListener("mousemove", moveMillenniumFalcon, true);
         bodyObj.removeEventListener("mousemove", mouseMoveOut, true);
         scorediv.style.display = "none";
