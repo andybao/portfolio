@@ -1,7 +1,6 @@
 <?php
 require_once 'db_value.php';
 require_once 'db_admin.php';
-//require_once '../../../../../database.php';
 require_once($_SERVER['DOCUMENT_ROOT'] . '/../database.php');
 
 
