@@ -1,0 +1,5 @@
+Hey, My name's Andy Bao.
+I'm a student of the Web Development program.
+I love the command line, JS, DB and backend.
+Here is my business card.
+
