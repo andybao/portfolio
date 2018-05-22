@@ -3,12 +3,13 @@ I will show my ability with 4 apps today:
 1. One page content management system demo.
    - PHP, MySQL, Ajax
 
-2. A pure javascript game.
-   - Javascript Object - Oriented Programming
+2. An online chat app.
+  - C#, ASP.NET entity framework
+  - SignalR library
+  - Azure Cloud
 
-3. An online chat app.
-   - C#, ASP.NET entity framework
-   - SignalR library
+3. A pure javascript game.
+   - Javascript Object - Oriented Programming
 
 4. This automation demo system.
    - Node.js, webpack

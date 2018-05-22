@@ -9,6 +9,7 @@ import txt_3 from 'raw-loader!./txt/3.txt';
 import txt_4 from 'raw-loader!./txt/4.txt';
 import txt_5 from 'raw-loader!./txt/5.txt';
 import txt_6 from 'raw-loader!./txt/6.txt';
+import txt_7 from 'raw-loader!./txt/7.txt';
 let style, styleEl, workEl, pgpEl, skipAnimationEl, pauseEl, textbtn;
 let displaySpeed = 0;
 
@@ -35,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $("#f_a_delete_btn").click(function () {
         faqAdminDeleteAnimation();
+    });
+
+    $("#h_c_btn").click(function () {
+        chatClientAnimation();
     });
 
 });
@@ -100,7 +105,20 @@ async function faqAdminDeleteAnimation() {
         //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
         await writeTo(workEl, txt_6, 0, displaySpeed, false, 1);
         await $("#f_a_delete_btn").prop('disabled', true);
-        //await $("#f_a_delete_btn").prop('disabled', false);
+        await $("#h_c_btn").prop('disabled', false);
+    }
+        // Flow control straight from the ghettos of Milwaukee
+    catch(e) {
+        throw e;
+    }
+}
+
+async function chatClientAnimation() {
+    try {
+        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+        await writeTo(workEl, txt_7, 0, displaySpeed, false, 1);
+        await $("#h_c_btn").prop('disabled', true);
+        await $("#h_a_btn").prop('disabled', false);
     }
         // Flow control straight from the ghettos of Milwaukee
     catch(e) {

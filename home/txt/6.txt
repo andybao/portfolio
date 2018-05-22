@@ -1,2 +1,7 @@
 That's all for the first app.
-Let's move onto the second one.
+
+Let's move to the second one: HelloChat.
+
+2.1
+This app allows user chat with admin.
+
