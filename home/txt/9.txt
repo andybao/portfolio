@@ -1,6 +1,6 @@
 3.2
-OK, It's my turn now.
+OK, It's my turn.
 I am not sure how many points I can get,
 because I cannot see the screen. :(
-I just want to show I can control the mouse.
+It's only for demo mouse control.
 

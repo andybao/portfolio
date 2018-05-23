@@ -13,8 +13,9 @@ import txt_7 from 'raw-loader!./txt/7.txt';
 import txt_8 from 'raw-loader!./txt/8.txt';
 import txt_9 from 'raw-loader!./txt/9.txt';
 import txt_10 from 'raw-loader!./txt/10.txt';
+import txt_11 from 'raw-loader!./txt/11.txt';
 let style, styleEl, workEl, pgpEl, skipAnimationEl, pauseEl, textbtn;
-let displaySpeed = 0;
+let displaySpeed = 25;
 
 const isLocal = window.location.hostname === 'localhost';
 
@@ -56,7 +57,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $("#g_p_btn").click(function () {
         gamePlayerAnimation();
-    })
+    });
+
+    $("#about_btn").click(function () {
+        aboutAnimation();
+    });
 });
 
 async function startAnimation() {
@@ -181,6 +186,22 @@ async function gamePlayerAnimation() {
 
         await writeTo(workEl, txt_10, 0, displaySpeed, false, 1);
         await $("#g_p_btn").prop('disabled', true);
+        await $("#about_btn").prop('disabled', false);
+
+    }
+        // Flow control straight from the ghettos of Milwaukee
+    catch(e) {
+        throw e;
+    }
+}
+
+async function aboutAnimation() {
+
+    try {
+
+        await writeTo(workEl, txt_11, 0, displaySpeed, false, 1);
+        await $("#about_btn").prop('disabled', true);
+        await $("#final_btn").prop('disabled', false);
 
     }
         // Flow control straight from the ghettos of Milwaukee

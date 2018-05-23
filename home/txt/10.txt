@@ -1,3 +1,11 @@
 How many points I get? :)
 Find Andy if you want to try it.
 
+In the end, I'd like to explain how this
+automation demo works.
+
+4.1
+I use Python and Selenium to control browsers.
+For example:
+Let's see "What can I do for you?"
+
