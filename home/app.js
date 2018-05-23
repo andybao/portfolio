@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 async function startAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
         await writeTo(workEl, txt_0, 0, displaySpeed, false, 1);
         await $("#card").show("slow");
         await Promise.delay(2000);
@@ -83,7 +82,7 @@ async function startAnimation() {
 
 async function faqClientAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+
         await writeTo(workEl, txt_3, 0, displaySpeed, false, 1);
         await $("#f_c_btn").prop('disabled', true);
         await $("#f_a_create_btn").prop('disabled', false);
@@ -96,7 +95,7 @@ async function faqClientAnimation() {
 
 async function faqAdminCreateAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+
         await writeTo(workEl, txt_4, 0, displaySpeed, false, 1);
         await $("#f_a_create_btn").prop('disabled', true);
         await $("#f_a_edit_btn").prop('disabled', false);
@@ -109,7 +108,7 @@ async function faqAdminCreateAnimation() {
 
 async function faqAdminEditAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+
         await writeTo(workEl, txt_5, 0, displaySpeed, false, 1);
         await $("#f_a_edit_btn").prop('disabled', true);
         await $("#f_a_delete_btn").prop('disabled', false);
@@ -143,7 +142,7 @@ async function faqAdminDeleteAnimation() {
 
 async function chatClientAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+
         await writeTo(workEl, txt_7, 0, displaySpeed, false, 1);
         await $("#h_c_btn").prop('disabled', true);
         await $("#h_a_btn").prop('disabled', false);
@@ -156,7 +155,7 @@ async function chatClientAnimation() {
 
 async function chatAdminAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+
         await writeTo(workEl, txt_8, 0, displaySpeed, false, 1);
         await $("#h_a_btn").prop('disabled', true);
         await $("#g_v_btn").prop('disabled', false);
@@ -169,7 +168,7 @@ async function chatAdminAnimation() {
 
 async function gameVideoAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+
         await writeTo(workEl, txt_9, 0, displaySpeed, false, 1);
         await $("#g_v_btn").prop('disabled', true);
         await $("#g_p_btn").prop('disabled', false);
