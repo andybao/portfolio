@@ -10,9 +10,12 @@ import txt_4 from 'raw-loader!./txt/4.txt';
 import txt_5 from 'raw-loader!./txt/5.txt';
 import txt_6 from 'raw-loader!./txt/6.txt';
 import txt_7 from 'raw-loader!./txt/7.txt';
+import txt_8 from 'raw-loader!./txt/8.txt';
+import txt_9 from 'raw-loader!./txt/9.txt';
 let style, styleEl, workEl, pgpEl, skipAnimationEl, pauseEl, textbtn;
 let displaySpeed = 0;
 
+const isLocal = window.location.hostname === 'localhost';
 
 document.addEventListener("DOMContentLoaded", function() {
     let t = document.getElementById('info');
@@ -41,6 +44,11 @@ document.addEventListener("DOMContentLoaded", function() {
     $("#h_c_btn").click(function () {
         chatClientAnimation();
     });
+
+    $("#g_v_btn").click(function () {
+       gameVideoAnimation();
+    });
+
 
 });
 
@@ -102,10 +110,18 @@ async function faqAdminEditAnimation() {
 
 async function faqAdminDeleteAnimation() {
     try {
-        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
-        await writeTo(workEl, txt_6, 0, displaySpeed, false, 1);
+
         await $("#f_a_delete_btn").prop('disabled', true);
-        await $("#h_c_btn").prop('disabled', false);
+
+        if (isLocal) {
+            await writeTo(workEl, txt_8, 0, displaySpeed, false, 1);
+            await $("#g_v_btn").prop('disabled', false);
+        } else {
+            await writeTo(workEl, txt_6, 0, displaySpeed, false, 1);
+            await $("#h_c_btn").prop('disabled', false);
+        }
+
+
     }
         // Flow control straight from the ghettos of Milwaukee
     catch(e) {
@@ -122,6 +138,19 @@ async function chatClientAnimation() {
     }
         // Flow control straight from the ghettos of Milwaukee
     catch(e) {
+        throw e;
+    }
+}
+
+async function gameVideoAnimation() {
+    try {
+        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+        await writeTo(workEl, txt_9, 0, displaySpeed, false, 1);
+        await $("#g_v_btn").prop('disabled', true);
+        await $("#g_p_btn").prop('disabled', false);
+    }
+    // Flow control straight from the ghettos of Milwaukee
+catch(e) {
         throw e;
     }
 }
