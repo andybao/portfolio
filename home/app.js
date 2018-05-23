@@ -12,6 +12,7 @@ import txt_6 from 'raw-loader!./txt/6.txt';
 import txt_7 from 'raw-loader!./txt/7.txt';
 import txt_8 from 'raw-loader!./txt/8.txt';
 import txt_9 from 'raw-loader!./txt/9.txt';
+import txt_10 from 'raw-loader!./txt/10.txt';
 let style, styleEl, workEl, pgpEl, skipAnimationEl, pauseEl, textbtn;
 let displaySpeed = 0;
 
@@ -53,7 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
        gameVideoAnimation();
     });
 
-
+    $("#g_p_btn").click(function () {
+        gamePlayerAnimation();
+    })
 });
 
 async function startAnimation() {
@@ -168,6 +171,20 @@ async function gameVideoAnimation() {
     }
     // Flow control straight from the ghettos of Milwaukee
 catch(e) {
+        throw e;
+    }
+}
+
+async function gamePlayerAnimation() {
+
+    try {
+
+        await writeTo(workEl, txt_10, 0, displaySpeed, false, 1);
+        await $("#g_p_btn").prop('disabled', true);
+
+    }
+        // Flow control straight from the ghettos of Milwaukee
+    catch(e) {
         throw e;
     }
 }

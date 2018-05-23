@@ -1,3 +1,5 @@
 The third app is a javascript game.
+
+3.1
 Let me show you a video first.
-It's palyed in the local cuz its size is big.
+
