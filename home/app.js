@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function() {
         chatClientAnimation();
     });
 
+    $("#h_a_btn").click(function () {
+       chatAdminAnimation();
+    });
+
     $("#g_v_btn").click(function () {
        gameVideoAnimation();
     });
@@ -135,6 +139,19 @@ async function chatClientAnimation() {
         await writeTo(workEl, txt_7, 0, displaySpeed, false, 1);
         await $("#h_c_btn").prop('disabled', true);
         await $("#h_a_btn").prop('disabled', false);
+    }
+        // Flow control straight from the ghettos of Milwaukee
+    catch(e) {
+        throw e;
+    }
+}
+
+async function chatAdminAnimation() {
+    try {
+        //await writeTo(styleEl, styleText[0], 0, 16, true, 1);
+        await writeTo(workEl, txt_8, 0, displaySpeed, false, 1);
+        await $("#h_a_btn").prop('disabled', true);
+        await $("#g_v_btn").prop('disabled', false);
     }
         // Flow control straight from the ghettos of Milwaukee
     catch(e) {
