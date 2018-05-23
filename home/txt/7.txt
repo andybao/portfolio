@@ -2,5 +2,5 @@
 The admin can DRUD database as demo 1 did.
 It comes from ASP.NET entity framework.
 Because this part is same as demo 1,
-So I only save/delete current dialog quickly.
+So I will save/delete current dialog quickly.
 
