@@ -1,5 +1,5 @@
 2.2
-The admin can DRUD database as demo 1 did.
+The admin can CRUD database as demo 1 did.
 It comes from ASP.NET entity framework.
 Because this part is same as demo 1,
 So I will save/delete current dialog quickly.
